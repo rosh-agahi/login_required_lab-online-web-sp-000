@@ -9,9 +9,10 @@ class SecretsController < ApplicationController
   end
   
   def require_login 
-    if current_user.nil? || current_user.empty?
-  
+    if !current_user.nil?
     else 
-      redirect_to controller: 'sessions', action 'new'
+      redirect_to login_path
+    end 
+  end 
 
 end
