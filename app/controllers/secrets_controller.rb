@@ -1,5 +1,5 @@
 class SecretsController < ApplicationController
-  before_action :authentication_required
+  before_action :require_login
 
   def show
   end
