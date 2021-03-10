@@ -3,5 +3,8 @@ class SecretsController < ApplicationController
 
   def show
   end
+  
+  def require_login 
+    if cu
 
 end
