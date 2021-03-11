@@ -3,6 +3,7 @@ class SecretsController < ApplicationController
 
   def current_user
     if session[:name] 
+      session[:name]
     else
      nil 
     end 
