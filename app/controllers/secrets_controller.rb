@@ -2,7 +2,10 @@ class SecretsController < ApplicationController
   before_action :require_login
 
   def current_user
-    session[:name] ||= nil
+    if session[:name] 
+    else
+     nil 
+    end 
   end
   
   def show
